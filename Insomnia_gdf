@@ -1,0 +1,289 @@
+type: collection.insomnia.rest/5.0
+name: Proyecto Final
+meta:
+  id: wrk_3e73cba2633344c2905c1aa7f8ab279e
+  created: 1750972384305
+  modified: 1752253019556
+  description: ""
+collection:
+  - url: http://localhost:8080/api/productos
+    name: PRODUCTO - Crear
+    meta:
+      id: req_a254cb6b0c7645289cbfad18a42b6c27
+      created: 1752673623690
+      modified: 1752673683414
+      isPrivate: false
+      description: ""
+      sortKey: -1752673623690
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+            "nombre": "Teclado Mecánico",
+            "precio": 75.99,
+            "stock": 100
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/11.3.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/api/productos
+    name: PRODUCTO - Listar Todos
+    meta:
+      id: req_0642ce8008c94ef9a3836f4b26d4cbd8
+      created: 1752673709614
+      modified: 1752675224143
+      isPrivate: false
+      description: ""
+      sortKey: -1752673709614
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/11.3.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/api/productos/2
+    name: PRODUCTO - Listar por ID
+    meta:
+      id: req_dad0d9ad7adc4becaaddd6af02368b0c
+      created: 1752673815974
+      modified: 1752673842247
+      isPrivate: false
+      description: ""
+      sortKey: -1752673815974
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/11.3.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/api/productos/1
+    name: PRODUCTO - Actualizar
+    meta:
+      id: req_a66950c382144aa48d4a51678d61ca79
+      created: 1752673852885
+      modified: 1752674148593
+      isPrivate: false
+      description: ""
+      sortKey: -1752673852885
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        {
+            "nombre": "Teclado Mecánico RGB",
+            "precio": 85.00,
+            "stock": 95
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_9da9fbc07e36478fb560d20fa8ee1e27
+      - name: User-Agent
+        value: insomnia/11.3.0
+        id: pair_2f081c694f98448980b2ffbfb13dc626
+        disabled: true
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/api/productos/1
+    name: PRODUCTO - Eliminar
+    meta:
+      id: req_eb2e977e936442ea876d307930ba4204
+      created: 1752674165381
+      modified: 1752674193196
+      isPrivate: false
+      description: ""
+      sortKey: -1752674165381
+    method: DELETE
+    headers:
+      - name: User-Agent
+        value: insomnia/11.3.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/api/pedidos
+    name: PEDIDO - Crear
+    meta:
+      id: req_29089f72a26d4d7ba32640afddb746b1
+      created: 1752674237862
+      modified: 1752674339097
+      isPrivate: false
+      description: ""
+      sortKey: -1752674237862
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+            "lineas": [
+                {
+                    "productoId": 2,
+                    "cantidad": 1
+                },
+                {
+                    "productoId": 3,  
+                    "cantidad": 3
+                }
+            ]
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/11.3.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/api/pedidos
+    name: PEDIDO - Listar Todos
+    meta:
+      id: req_5c9559706ad5416fbf736aab9c4d84dc
+      created: 1752674376006
+      modified: 1752675369835
+      isPrivate: false
+      description: ""
+      sortKey: -1752674376006
+    method: GET
+    body:
+      mimeType: application/json
+      text: ""
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/11.3.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/api/pedidos/1
+    name: PEDIDO - Listar por ID
+    meta:
+      id: req_ca117da9baa64097885d5a1705206abf
+      created: 1752674447182
+      modified: 1752674539989
+      isPrivate: false
+      description: ""
+      sortKey: -1752674447182
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/11.3.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/api/pedidos/1
+    name: PEDIDO - Eliminar
+    meta:
+      id: req_ea61fdf767324407816cffdc72a42855
+      created: 1752674564894
+      modified: 1752674601118
+      isPrivate: false
+      description: ""
+      sortKey: -1752674564894
+    method: DELETE
+    headers:
+      - name: User-Agent
+        value: insomnia/11.3.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/api/pedidos
+    name: PEDIDO - Crear (sin stock)
+    meta:
+      id: req_2388a89cc0a9428096df349a95662124
+      created: 1752675311628
+      modified: 1752675335821
+      isPrivate: false
+      description: ""
+      sortKey: -1752674201621.5
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+            "lineas": [
+                {
+                    "productoId": 4,
+                    "cantidad": 11
+                }
+            ]
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/11.3.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_25b9b2d3eec7eee45e3a68f1d26b8e7a89eaef93
+    created: 1752252980287
+    modified: 1752252980287
+environments:
+  name: Base Environment
+  meta:
+    id: env_25b9b2d3eec7eee45e3a68f1d26b8e7a89eaef93
+    created: 1750972384308
+    modified: 1752252980168
+    isPrivate: false
