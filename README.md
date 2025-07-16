@@ -1,7 +1,9 @@
 Proyecto integrador final de talento tech, alumno Gustavo David Fernández año 2025 primer semestre.
+Desarrollado con lenguaje JAVA y framework SpringBoot y demás dependencias, las pruebas sobre el api rest full se realizaron con registros cargados a través de sql en el archivo "data.sql" y se adjunta la colección exportada con la aplicación insomnia llamada "Insomnia_gdf" utilizado para realizar las pruebas.
+
 Estructura del proyecto creado con IntelliJ IDEA 2025.1.3 (Community Edition).
 
- src/main/java/gdf/
+
 ├── controller/  -> Maneja las solicitudes HTTP y respuestas
 
 │   ├── PedidoController.java
@@ -47,8 +49,4 @@ Estructura del proyecto creado con IntelliJ IDEA 2025.1.3 (Community Edition).
     ├── PedidoService.java
     
     └── ProductoService.java
-    
-
-Desarrollado con lenguaje JAVA y framework SpringBoot y demás dependencias, las pruebas sobre el api rest full se realizaron con registros cargados a través de sql en el archivo "data.sql" y se adjunta la colección exportada con la aplicación insomnia llamada "Insomnia_gdf" utilizado para realizar las pruebas.
-
-GDF.-
+   
