@@ -3,6 +3,7 @@ Desarrollado con lenguaje JAVA y framework SpringBoot y demás dependencias, las
 
 Estructura del proyecto creado con IntelliJ IDEA 2025.1.3 (Community Edition).
 
+src/main/java/gdf/
 
 ├── controller/  -> Maneja las solicitudes HTTP y respuestas
 
